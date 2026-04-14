@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Fun facts about Spinosaurus" />
+        <meta name="author" content="Carter Wyeth" />
+        <title>Carter Wyeth | Fun Facts</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            #generate-dino-fact {
+                background-color: #198754;
+                border-color: #198754;
+            }
+
+            #generate-dino-fact:hover,
+            #generate-dino-fact:focus {
+                background-color: #157347;
+                border-color: #146c43;
+            }
+
+            #dino-fact-animation {
+                margin-top: 1rem;
+                opacity: 0;
+                max-width: 280px;
+                border-radius: 0.5rem;
+                pointer-events: none;
+                display: none;
+            }
+
+            #dino-fact-animation.animate {
+                display: inline-block;
+                animation: dinoFade 3s ease-in-out forwards;
+            }
+
+            @keyframes dinoFade {
+                0% { opacity: 0; }
+                10% { opacity: 1; }
+                66.66% { opacity: 1; }
+                100% { opacity: 0; }
+            }
+        </style>
+    </head>
+    <body id="page-top" class="fun-facts-page">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html">Carter Wyeth</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="factsMenuDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="factsMenuDropdown">
+                                <li><a class="dropdown-item" href="#facts">Facts</a></li>
+                                <li><a class="dropdown-item" href="index.html#about">Home About</a></li>
+                                <li><a class="dropdown-item" href="index.html#projects">Home Projects</a></li>
+                                <li><a class="dropdown-item" href="index.html#contact">Home Contact</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li><a class="dropdown-item" href="index.html">Home</a></li>
+                                <li><a class="dropdown-item" href="resume.html">Resume</a></li>
+                                <li><a class="dropdown-item" href="scratch.html">Scratch</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <header class="masthead">
+            <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+                <div class="text-center">
+                    <h1 class="mx-auto my-0 text-uppercase">Fun Facts (Web App) </h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Cool Dinosaur Fact Generator</h2>
+                    <a class="btn btn-primary btn-xl" href="#facts">Show Me the Facts</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="projects-section bg-light" id="facts">
+            <div class="container px-4 px-lg-5">
+                <div class="text-center mb-5">
+                    <h2>Spinosaurus Fun Facts</h2>
+                </div>
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8">
+                        <div class="bg-white rounded shadow-sm p-4 text-center">
+                            <h4 class="mb-3">Dinosaur Fun Fact Generator</h4>
+                            <p id="dino-fact-display" class="text-black-50 mb-4">Press the button to generate a dinosaur fact.</p>
+                            <button id="generate-dino-fact" class="btn btn-success btn-xl" type="button">Generate Fact</button>
+                            <div>
+                                <img id="dino-fact-animation" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhxLOk3ys7QSkWjlvmQVcyif77186rBOYtkw&s" alt="Dinosaur animation" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-6 mb-4">
+                        <div class="bg-white rounded shadow-sm p-4 h-100">
+                            <h4>Largest Known Carnivore</h4>
+                            <p class="text-black-50 mb-0">Estimated around 46 to 59 feet long, making it longer than the average Tyrannosaurus rex.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="bg-white rounded shadow-sm p-4 h-100">
+                            <h4>Built for Water</h4>
+                            <p class="text-black-50 mb-0">Its body proportions suggest it spent significant time in rivers and coastal habitats, unlike many other giant theropods.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="bg-white rounded shadow-sm p-4 h-100">
+                            <h4>Iconic Sail</h4>
+                            <p class="text-black-50 mb-0">The tall neural spines on its back formed a huge sail that may have helped with display, species recognition, or heat exchange.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="bg-white rounded shadow-sm p-4 h-100">
+                            <h4>Movie Star</h4>
+                            <p class="text-black-50 mb-0">Spinosaurus became a pop culture favorite after its big-screen role in Jurassic Park III.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer bg-black small text-center text-white-50">
+            <div class="container px-4 px-lg-5">Copyright &copy; Carter Wyeth 2026</div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
